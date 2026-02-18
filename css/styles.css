@@ -220,7 +220,7 @@ nav.scrolled .nav-brand { opacity: 1; }
 }
 
 .bottle-section img {
-  max-height: 110vh;
+  max-height: 125vh;
   width: auto;
   max-width: 600px;
   object-fit: contain;
