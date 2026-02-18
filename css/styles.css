@@ -214,11 +214,9 @@ nav.scrolled .nav-brand { opacity: 1; }
 ============================================ */
 .bottle-section {
   position: relative;
-  z-index: 25; /* root stacking context — above hero (20) */
   background: transparent;
   text-align: center;
   padding: 0;
-  margin-top: -60vh; /* pull top of bottle into the hero */
 }
 
 .bottle-section img {
@@ -258,6 +256,11 @@ nav.scrolled .nav-brand { opacity: 1; }
 .scene-wrapper > * {
   position: relative;
   z-index: 2;
+}
+
+/* Bottle must sit above hero (z-index:20) — higher specificity wins over scene-wrapper > * */
+.scene-wrapper > .bottle-section {
+  z-index: 25;
 }
 
 /* ============================================
