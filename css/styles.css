@@ -127,8 +127,8 @@ nav.scrolled .nav-brand { opacity: 1; }
 ============================================ */
 .hero {
   position: relative;
-  height: 120vh;
-  min-height: 750px;
+  height: 100vh;
+  min-height: 700px;
   overflow: hidden;
 }
 
@@ -294,7 +294,7 @@ nav.scrolled .nav-brand { opacity: 1; }
   font-size: clamp(0.68rem, 1.1vw, 0.88rem);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-mid);
+  color: var(--navy);
   margin-top: 1.4rem;
 }
 
