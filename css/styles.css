@@ -213,8 +213,7 @@ nav.scrolled .nav-brand { opacity: 1; }
 ============================================ */
 .bottle-section {
   position: relative;
-  z-index: 10;
-  margin-top: -52vh;
+  z-index: 1;
   background: transparent;
   text-align: center;
   padding: 0;
@@ -232,30 +231,35 @@ nav.scrolled .nav-brand { opacity: 1; }
 }
 
 /* ============================================
-   ALPINE ILLUSTRATION — full-width image section
-   sits between the bottle/hero and the origin text
+   SCENE WRAPPER — alpine bg behind bottle + origin
 ============================================ */
-.alpine-image-section {
-  width: 100%;
+.scene-wrapper {
   position: relative;
   z-index: 10;
-  line-height: 0; /* remove gap below inline img */
-  background: var(--white);
+  margin-top: -52vh;
+  background: url('../img/origin-bg.png') center top / cover no-repeat;
 }
 
-.alpine-image-section img {
-  width: 100%;
-  height: auto;
-  display: block;
+.scene-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.72);
+  z-index: 0;
+}
+
+.scene-wrapper > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ============================================
    ORIGIN — description + made in switzerland
 ============================================ */
 .origin-section {
-  background: var(--white);
+  background: transparent;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   padding: 5rem 2rem 7rem;
   text-align: center;
 }
