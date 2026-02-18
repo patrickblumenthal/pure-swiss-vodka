@@ -130,6 +130,7 @@ nav.scrolled .nav-brand { opacity: 1; }
   height: 100vh;
   min-height: 700px;
   overflow: hidden;
+  z-index: 20;
 }
 
 .hero-img {
